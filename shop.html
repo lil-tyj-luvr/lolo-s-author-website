@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Shop</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+<script src="cat-items.js"></script>
+
+<script src="cat.js"></script>
+
+<script src="cat-shop.js"></script>
+<script src="stats.js"></script>
+<script src="darkmode.js"></script>
+
+
+<div id="topbar">
+
+    <span id="coins">
+        🪙 0
+    </span>
+
+
+    <div id="topButtons">
+
+        <button id="themeButton">
+            🌙
+        </button>
+
+
+        <a href="achievements.html" id="achievementButton">
+            🏆
+        </a>
+
+    </div>
+
+</div>
+
+
+
+
+<h1>🛒 Shop</h1>
+
+
+<div class="shopBalance">
+
+    Current balance:
+
+    <h2>
+        🪙 <span id="shopCoins">0</span>
+    </h2>
+
+</div>
+
+
+
+<h2>📜 Secrets & Extras</h2>
+
+
+
+<div id="shopContainer">
+
+
+
+<!-- ITEM -->
+
+<div class="shopItem">
+
+<h2>📖 Deleted Scenes</h2>
+
+<p>
+Lost scenes that never made it into the final version.
+</p>
+
+<h3>
+🪙 99,999 coins
+</h3>
+
+
+<button 
+class="loreButton"
+data-id="deletedScenes"
+data-page="deleted-scenes.html"
+onclick="handleLoreButton('deletedScenes','deleted-scenes.html',99999)">
+BUY
+</button>
+
+</div>
+
+
+
+
+<div class="shopItem">
+
+<h2>🦋 Bonus Chapter — Lilith POV</h2>
+
+<p>
+A chapter that was never supposed to be found.
+</p>
+
+<h3>
+🪙 9,999 coins
+</h3>
+
+
+<button 
+class="loreButton"
+data-id="lilithChapter"
+data-page="lilith-chapter.html"
+onclick="handleLoreButton('lilithChapter','lilith-chapter.html',9999)">
+BUY
+</button>
+
+</div>
+
+
+
+
+
+<div class="shopItem">
+
+<h2>🛋️ A therapist for Lilith</h2>
+
+<p>
+Too late. She already chose violence.
+</p>
+
+<h3>
+🪙 999,999 coins
+</h3>
+
+
+<button onclick="buyItem('therapistLilith',999999)">
+BUY
+</button>
+
+</div>
+
+
+
+
+
+<div class="shopItem">
+
+<h2>🦮 A leash for Alice</h2>
+
+<p>
+WARNING: does not work.
+</p>
+
+<h3>
+🪙 666,666 coins
+</h3>
+
+
+<button onclick="buyItem('leashAlice',666666)">
+BUY
+</button>
+
+</div>
+
+
+
+
+
+<div class="shopItem">
+
+<h2>👨‍🍼 A responsible adult for Lisa</h2>
+
+<p>
+Unavailable. Try again later.
+</p>
+
+<h3>
+🪙 777,777 coins
+</h3>
+
+
+<button onclick="buyItem('adultLisa',777777)">
+BUY
+</button>
+
+</div>
+
+
+
+
+
+
+<div class="shopItem">
+
+<h2>👑 A Happy Ending for TOABC</h2>
+
+<h3>
+🪙 1,000,000 coins
+</h3>
+
+
+<button 
+class="loreButton"
+data-id="happyTOABC"
+data-page="happy-toabc.html"
+onclick="handleLoreButton('happyTOABC','happy-toabc.html',1000000)">
+BUY
+</button>
+
+</div>
+
+
+
+
+
+
+<div class="shopItem">
+
+<h2>🦋 A Happy Ending for BIMS</h2>
+
+<h3>
+🪙 1,000,000 coins
+</h3>
+
+
+<button 
+class="loreButton"
+data-id="happyBIMS"
+data-page="happy-bims.html"
+onclick="handleLoreButton('happyBIMS','happy-bims.html',1000000)">
+BUY
+</button>
+
+</div>
+
+
+
+
+
+
+
+<div class="shopItem">
+
+<h2>🎰 A Happy Ending for HAW</h2>
+
+<h3>
+🪙 1,000,000 coins
+</h3>
+
+
+<button 
+class="loreButton"
+data-id="happyHAW"
+data-page="happy-haw.html"
+onclick="handleLoreButton('happyHAW','happy-haw.html',1000000)">
+BUY
+</button>
+
+</div>
+
+
+
+
+
+
+
+<div class="shopItem">
+
+<h2>🔍 The Truth</h2>
+
+<h3>
+🪙 99,999 coins
+</h3>
+
+
+<button onclick="buyItem('truth',99999)">
+BUY
+</button>
+
+</div>
+
+
+
+
+</div>
+
+<h2 class="shopSectionTitle">☀️ Light Mode Wallpapers</h2>
+
+<div id="wallpaperContainer">
+
+
+
+<div class="shopItem">
+
+<h2>Pink Stars</h2>
+
+<p>
+The original website wallpaper.
+</p>
+
+<h3>
+FREE
+</h3>
+
+<button onclick="equipWallpaper('pinkStars','light')">
+EQUIP
+</button>
+
+</div>
+
+
+
+
+<div class="shopItem">
+
+<h2>BTS HYYH theme</h2>
+
+<p>
+For ARMYs only (jk).
+</p>
+
+<h3>
+🪙 25,000 coins
+</h3>
+
+<button 
+class="wallpaperButton"
+data-id="hyyh"
+data-mode="light"
+onclick="buyWallpaper('hyyh','light',25000)">
+BUY
+</button>
+
+</div>
+
+
+
+
+
+<div class="shopItem">
+
+<h2>Nana</h2>
+
+<p>
+For the girlies.
+</p>
+
+<h3>
+🪙 50,000 coins
+</h3>
+
+<button 
+class="wallpaperButton"
+data-id="nana"
+data-mode="light"
+onclick="buyWallpaper('nana','light',50000)">
+BUY
+</button>
+
+</div>
+
+
+
+
+
+
+<div class="shopItem">
+
+<h2>A simple floral decoration</h2>
+
+<p>
+For the minimalistics.
+</p>
+
+<h3>
+🪙 75,000 coins
+</h3>
+
+<button 
+class="wallpaperButton"
+data-id="floral"
+data-mode="light"
+onclick="buyWallpaper('floral','light',75000)">
+BUY
+</button>
+
+</div>
+
+<div class="shopItem">
+
+<h2>Sukuna</h2>
+
+<p>
+You watched Jujutsu Kaisen, right ? You like Sukuna, right ? Yeah, yeah, I know he killed a lot of characters. But who cares, really ?
+</p>
+
+<h3>
+🪙 75,000 coins
+</h3>
+
+<button 
+class="wallpaperButton"
+data-id="sukuna"
+data-mode="light"
+onclick="buyWallpaper('sukuna','light',75000)">
+BUY
+</button>
+
+</div>
+
+<div class="shopItem">
+
+<h2>ICONIC</h2>
+
+<p>
+For the students whose favorite subject is chemistry (how tho (not judging)).
+</p>
+
+<h3>
+🪙 75,000 coins
+</h3>
+
+<button 
+class="wallpaperButton"
+data-id="chemistry"
+data-mode="light"
+onclick="buyWallpaper('chemistry','light',75000)">
+BUY
+</button>
+
+</div>
+
+
+
+
+</div>
+
+<h2 class="shopSectionTitle">🌙 Dark Mode Wallpapers</h2>
+
+<div id="wallpaperContainerDark">
+
+
+
+
+
+<div class="shopItem">
+
+<h2>🌑 Dark Stars</h2>
+
+<p>
+The original dark atmosphere.
+</p>
+
+<h3>
+FREE
+</h3>
+
+<button
+class="wallpaperButton"
+data-id="darkStars"
+data-mode="dark"
+onclick="buyWallpaper('darkStars','dark',100000)">
+BUY
+</button>
+
+</div>
+
+
+
+
+
+<div class="shopItem">
+
+<h2>Floral decoration</h2>
+
+<p>
+The most simple thing here.
+</p>
+
+<h3>
+🪙 10,000 coins
+</h3>
+
+<button 
+class="wallpaperButton"
+data-id="floral1"
+data-mode="dark"
+onclick="buyWallpaper('floral1','dark',25000)">
+BUY
+</button>
+
+</div>
+
+
+
+
+
+<div class="shopItem">
+
+<h2>Guitar</h2>
+
+<p>
+Y'all play instruments ?
+</p>
+
+<h3>
+🪙 25,000 coins
+</h3>
+
+<button 
+class="wallpaperButton"
+data-id="guitar"
+data-mode="dark"
+onclick="buyWallpaper('guitar','dark',25000)">
+BUY
+</button>
+
+</div>
+
+
+
+
+
+<div class="shopItem">
+
+<h2>Leopart</h2>
+
+<p>
+No leopard was harmed during the making of this wallpaper. Well, I hope.
+</p>
+
+<h3>
+🪙 50,000 coins
+</h3>
+
+<button 
+class="wallpaperButton"
+data-id="leopard"
+data-mode="dark"
+onclick="buyWallpaper('leopard','dark',50000)">
+BUY
+</button>
+
+</div>
+
+<div class="shopItem">
+
+<h2>Moon</h2>
+
+<p>
+We love space, right nerdies ?
+</p>
+
+<h3>
+🪙 75,000 coins
+</h3>
+
+<button 
+class="wallpaperButton"
+data-id="moon"
+data-mode="dark"
+onclick="buyWallpaper('moon','dark',75000)">
+BUY
+</button>
+
+</div>
+
+<div class="shopItem">
+
+<h2>BTS Fake Love</h2>
+
+<p>
+You really thought you ARMYs wouldn't get a darkmode BTS wallpaper ???
+</p>
+
+<h3>
+🪙 75,000 coins
+</h3>
+
+<button 
+class="wallpaperButton"
+data-id="bts"
+data-mode="dark"
+onclick="buyWallpaper('bts','dark',75000)">
+BUY
+</button>
+
+</div>
+
+</div>
+
+<br/>
+
+<h2>🐈 Alice's Cat</h2>
+
+
+<div id="catShopContainer">
+
+
+<div class="shopItem">
+
+<h2>Fancy fish</h2>
+
+<p>
+What does a cat eat ? FIH, of course.
+</p>
+
+<h3>
+🪙 2,500 coins
+</h3>
+
+<button onclick="buyCatFood('fish',2500)">
+BUY
+</button>
+
+</div>
+
+
+<div class="shopItem">
+
+<h2>Salmon</h2>
+
+<p>
+Yes, it's also a fish. But I don't own a cat, idk what that eats gang. Cats do eat salmon in Minecraft tho
+</p>
+
+<h3>
+🪙 5,000 coins
+</h3>
+
+<button
+class="catBuyFood"
+data-id="salmon"
+onclick="buyCatFood('salmon')">
+BUY
+</button>
+
+</div>
+
+
+
+<div class="shopItem">
+
+<h2>Little crown Hat</h2>
+
+<p>
+For the king of the website.
+</p>
+
+<h3>
+🪙 25,000 coins
+</h3>
+
+<button
+class="catBuyHat"
+data-id="crown"
+onclick="buyCatHat('crown')">
+BUY
+</button>
+
+</div>
+
+
+<div class="shopItem">
+
+<h2>Policeman Hat</h2>
+
+<p>
+Be careful, he might discover all you sercets... 
+</p>
+
+<h3>
+🪙 25,000 coins
+</h3>
+
+<button
+class="catBuyHat"
+data-id="butterfly"
+onclick="buyCatHat('butterfly')">
+BUY
+</button>
+
+</div>
+<div class="shopItem">
+
+<h2>Cow-boy Hat</h2>
+
+<p>
+Yee-haw!!! - Jungkook
+</p>
+
+<h3>
+🪙 25,000 coins
+</h3>
+
+<button
+class="catBuyHat"
+data-id="casino"
+onclick="buyCatHat('casino')">
+BUY
+</button>
+
+</div>
+
+
+<div class="shopItem">
+
+<h2>Luffy Hat</h2>
+
+<p>
+He's not gon be the king of the website. HE'S GON BE THE KING OF THE PIRATES!! And first, he'll steal Obsession movie for me. Thanks bud
+</p>
+
+<h3>
+🪙 25,000 coins
+</h3>
+
+<button
+class="catBuyHat"
+data-id="wizard"
+onclick="buyCatHat('wizard')">
+BUY
+</button>
+</div>
+
+<div class="shopItem">
+
+<h2>Student Hat</h2>
+
+<p>
+Poor guy. Why are you doing that to him ? HE'S A CAT HE DOESN'T NEED TRAUMA
+</p>
+
+<h3>
+🪙 25,000 coins
+</h3>
+
+<button
+class="catBuyHat"
+data-id="flower"
+onclick="buyCatHat('flower')">
+BUY
+</button>
+</div>
+
+
+<div class="shopItem">
+
+<h2>Magician Hat</h2>
+
+<p>
+Magician, or dare I say GENTLEMAN ? All men, but not all cats.
+</p>
+
+<h3>
+🪙 25,000 coins
+</h3>
+
+<button
+class="catBuyHat"
+data-id="detective"
+onclick="buyCatHat('detective')">
+BUY
+</button>
+</div>
+
+
+
+<div class="shopItem">
+
+<h2>Litten Skin!!</h2>
+
+<p>
+FOR THE POKEMON FANS HERE'S MY FAV POKEMON HERE FOR YOU ALL (actually I made that for me at the beginning, but enjoy it too!!!)
+</p>
+
+<h3>
+🪙 100,000 coins
+</h3>
+
+<button
+class="catBuySkin"
+data-id="bowtie"
+onclick="buyCatSkin('bowtie')">
+BUY
+</button>
+
+</div>
+</div>
+
+<br>
+
+<a href="website code.html">
+⬅ Return Home
+</a>
+
+
+
+<script src="coins.js"></script>
+
+<script src="achievements.js"></script>
+
+<script src="shop.js"></script>
+
+<script src="wallpapers.js"></script>
+
+<script src="cat.js"></script>
+
+
+</body>
+
+</html>

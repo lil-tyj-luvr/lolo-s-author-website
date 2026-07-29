@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Deleted Scenes</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<script src="darkmode.js"></script>
+
+
+<div id="topbar">
+
+<span id="coins">
+🪙 0
+</span>
+
+
+<div id="topButtons">
+
+<button id="themeButton">
+🌙
+</button>
+
+
+<a href="achievements.html" id="achievementButton">
+🏆
+</a>
+
+</div>
+
+</div>
+
+
+
+<h1>🦋 Lilith's POV</h1>
+
+
+<div class="lorePage">
+
+<h2>The second side of the story.</h2>
+
+
+<p>
+You thought you knew everything about Lilith.
+</p>
+
+
+<p>
+You were wrong.
+</p>
+
+
+<p>
+Some thoughts were never written.
+Some memories were never shared.
+</p>
+
+<p>Girl idk leave me some time:3</p>
+
+</div>
+
+
+
+<a href="shop.html">
+⬅ Return to Shop
+</a>
+
+
+
+<script src="coins.js"></script>
+<script>
+
+let ownedItems =
+JSON.parse(localStorage.getItem("boughtItems")) || {};
+
+
+if(!ownedItems["lilithChapter"]){
+
+    document.body.innerHTML=
+    "<h1>🔒 Locked</h1><p>You haven't unlocked this yet.</p>";
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Deleted Scenes</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<script src="darkmode.js"></script>
+
+
+<div id="topbar">
+
+<span id="coins">
+🪙 0
+</span>
+
+
+<div id="topButtons">
+
+<button id="themeButton">
+🌙
+</button>
+
+
+<a href="achievements.html" id="achievementButton">
+🏆
+</a>
+
+</div>
+
+</div>
+
+<h1>🎰 A Happy Ending for HAW</h1>
+
+
+<div class="lorePage">
+
+
+<h2>The house doesn't always win.</h2>
+
+
+<p>
+What if Lisa never promised to get Kal arrested ?
+</p>
+
+
+<p>
+No promises broken.
+No sacrifices.
+No regrets.
+</p>
+
+
+<p>
+Just once.
+</p>
+
+<p>But girl, I haven't written that book yet, how do you want me to serve you a happy ending ? Do you even know its a sad end ??? <br/>
+(yes you do since its my book lmao)</p>
+
+</div>
+</div>
+
+</body>
+
+<a href="shop.html">
+⬅ Return to Shop
+</a>
+
+
+
+<script src="coins.js"></script>
+<script>
+
+let ownedItems =
+JSON.parse(localStorage.getItem("boughtItems")) || {};
+
+
+if(!ownedItems["happyHAW"]){
+
+    document.body.innerHTML=
+    "<h1>🔒 Locked</h1><p>You haven't unlocked this yet.</p>";
+
+}
+
+</script>
+
+</body>
+
+</html>

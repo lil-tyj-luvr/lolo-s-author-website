@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Deleted Scenes</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<script src="darkmode.js"></script>
+
+
+<div id="topbar">
+
+<span id="coins">
+🪙 0
+</span>
+
+
+<div id="topButtons">
+
+<button id="themeButton">
+🌙
+</button>
+
+
+<a href="achievements.html" id="achievementButton">
+🏆
+</a>
+
+</div>
+
+</div>
+
+
+
+<h1>📖 Deleted Scenes</h1>
+
+
+<div class="lorePage">
+
+
+<h2>Lost chapters.</h2>
+
+
+<p>
+Some scenes were never meant to be seen.
+</p>
+<p>
+They existed somewhere between drafts,
+characters who changed, and ideas that disappeared.
+</p>
+<p>
+OOOoooooooooOOOOOoooOOOOOOoooh I hate himmmmmm. No, yk what ? I don't. I just hate myself so much that I cant accept the facts:<br/>
+Lisa's dead. Liam's dead. My parents too. Killing Kael won't bring them back, no, it would just bring some justice to all of that. <br/>
+But killing his family, and make him suffer by making him believe I love him, THIS, this is pure rage. This is just cruel. 
+</p>
+<p>But I never have that kind of thought. Because I don't care if it doesn't bring them back. I dont care if its cruel, and beyond<br/>
+justice. I. Dont. Care. Now leave me alone. I'm DEAD, remember ???</p>
+
+
+</div>
+
+
+
+<a href="shop.html">
+⬅ Return to Shop
+</a>
+
+
+
+<script src="coins.js"></script>
+<script>
+
+let ownedItems =
+JSON.parse(localStorage.getItem("boughtItems")) || {};
+
+
+if(!ownedItems["deletedScenes"]){
+
+    document.body.innerHTML=
+    "<h1>🔒 Locked</h1><p>You haven't unlocked this yet.</p>";
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Deleted Scenes</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<script src="darkmode.js"></script>
+
+
+<div id="topbar">
+
+<span id="coins">
+🪙 0
+</span>
+
+
+<div id="topButtons">
+
+<button id="themeButton">
+🌙
+</button>
+
+
+<a href="achievements.html" id="achievementButton">
+🏆
+</a>
+
+</div>
+
+</div>
+<h1>🦋 A Happy Ending for BIMS</h1>
+
+
+<div class="lorePage">
+
+
+<h2>No monsters. No experiments.</h2>
+
+
+<p>
+What if Alice had accepted what she was, and learned how to control her "powers" ?
+</p>
+<p>
+Some stories deserve a kinder ending. Like this one.
+</p>
+<p>Now, I wonder. One, how did you read BIMS if it's not out yet ? And two, you know there's literally an alternate universe at the end of BIMS with a happy ending ?<br/>
+So WHAT ARE YOU DOING HERE?? GET BACK TO THE CASINO AND BET EVERYTHING YOU HAVE.</p>
+
+</div>
+</div>
+
+
+
+<a href="shop.html">
+⬅ Return to Shop
+</a>
+
+
+
+<script src="coins.js"></script>
+<script>
+
+let ownedItems =
+JSON.parse(localStorage.getItem("boughtItems")) || {};
+
+
+if(!ownedItems["happyBIMS"]){
+
+    document.body.innerHTML=
+    "<h1>🔒 Locked</h1><p>You haven't unlocked this yet.</p>";
+
+}
+
+</script>
+
+</body>
+
+</html>

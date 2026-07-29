@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Statistics</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="cat.js"></script>
+
+</head>
+
+
+<body>
+
+
+<h1>📊 Your statistics</h1>
+
+
+
+<div class="shopItem">
+
+
+<h2>
+🪙 Coins earned:
+<span id="earned"></span>
+</h2>
+
+
+
+<h2>
+💸 Coins spent:
+<span id="spent"></span>
+</h2>
+
+
+
+
+<h2>
+🖱️ Clicks:
+<span id="clicks"></span>
+</h2>
+
+
+
+<h2>
+🎰 Casino games:
+<span id="casino"></span>
+</h2>
+
+
+
+<h2>
+🦋 Butterflies:
+<span id="butterflies"></span>
+</h2>
+
+
+
+<h2>
+💀 Game overs:
+<span id="deaths"></span>
+</h2>
+
+<h2>
+🏆 Achievements unlocked:
+<span id="achievements">0</span>
+</h2>
+
+</div>
+
+
+
+<a href="website code.html">
+⬅ Return home
+</a>
+
+
+
+<script src="stats.js"></script>
+
+
+<script>
+
+
+const s = getStats();
+
+
+
+// ==========================
+// STATS
+// ==========================
+
+
+document.getElementById("earned").innerHTML =
+s.coinsEarned || 0;
+
+
+
+document.getElementById("spent").innerHTML =
+s.coinsSpent || 0;
+
+
+
+document.getElementById("clicks").innerHTML =
+s.clicks || 0;
+
+
+
+document.getElementById("casino").innerHTML =
+s.casinoGames || 0;
+
+
+
+document.getElementById("butterflies").innerHTML =
+s.butterflies || 0;
+
+
+
+document.getElementById("deaths").innerHTML =
+s.gameOvers || 0;
+
+
+
+document.getElementById("achievements").innerHTML =
+s.achievementsUnlocked || 0;
+
+
+
+document.getElementById("best").innerHTML =
+s.bestScore || 0;
+
+
+
+document.getElementById("pages").innerHTML =
+s.pagesVisited || 0;
+
+
+
+
+
+
+// ==========================
+// TEMPS
+// ==========================
+
+
+const timeElement = document.querySelector("#time");
+
+
+if(timeElement){
+
+
+    let seconds = Number(s.timeSpent) || 0;
+
+
+    let minutes = Math.floor(seconds / 60);
+
+    let secs = seconds % 60;
+
+
+    timeElement.textContent =
+    minutes + " min " + secs + " sec";
+
+
+}
+else{
+
+
+    console.log("❌ Time element not found");
+
+
+}
+</script>
+
+
+</body>
+
+</html>
