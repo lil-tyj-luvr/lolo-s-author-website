@@ -46,6 +46,14 @@ if(!catData.ownedFood[id]){
 
     removeCoins(item.price);
 
+    catData.catCoinsSpent += item.price;
+
+if(catData.catCoinsSpent>=10000){
+
+    unlockAchievement("spoiledCat");
+
+}
+
 
 
     catData.ownedFood[id]++;
@@ -108,6 +116,14 @@ function buyCatHat(id){
 
     removeCoins(item.price);
 
+    catData.catCoinsSpent += item.price;
+
+if(catData.catCoinsSpent>=10000){
+
+    unlockAchievement("spoiledCat");
+
+}
+
 
 
     catData.ownedHats.push(id);
@@ -123,6 +139,18 @@ function buyCatHat(id){
 
 
     showCatMessage("🎩 New hat unlocked!");
+
+    if(
+
+catData.ownedHats.length===
+
+Object.keys(catItems.hats).length
+
+){
+
+    unlockAchievement("allHats");
+
+}
 
 
 }
@@ -168,6 +196,14 @@ function buyCatSkin(id){
 
     removeCoins(item.price);
 
+    catData.catCoinsSpent += item.price;
+
+if(catData.catCoinsSpent>=10000){
+
+    unlockAchievement("spoiledCat");
+
+}
+
 
 
     catData.ownedSkins.push(id);
@@ -183,6 +219,8 @@ function buyCatSkin(id){
 
 
     showCatMessage("✨ New skin unlocked!");
+
+    unlockAchievement("specialSkin");
 
 
 }

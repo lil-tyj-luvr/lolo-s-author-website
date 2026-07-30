@@ -1889,3 +1889,209 @@ body:not(.dark-mode) .catInventoryCard{
     margin-top:10px;
 
 }
+/* ====================================================== */
+/* IMAGE VIEWER */
+/* ====================================================== */
+
+#imageOverlay{
+
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.75);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+opacity:0;
+
+pointer-events:none;
+
+transition:.2s;
+
+z-index:99999;
+
+}
+
+#imageOverlay.show{
+
+opacity:1;
+
+pointer-events:auto;
+
+}
+
+#imageViewer{
+
+background:white;
+
+border-radius:18px;
+
+padding:25px;
+
+max-width:850px;
+
+width:90%;
+
+text-align:center;
+
+position:relative;
+
+}
+
+#viewerImage{
+
+max-width:100%;
+
+max-height:70vh;
+
+border-radius:15px;
+
+}
+
+#viewerTitle{
+
+margin-top:15px;
+
+font-size:30px;
+
+color: rgb(255, 55, 89);
+
+}
+
+#viewerDescription{
+
+opacity:.8;
+
+margin-top:10px;
+
+font-size:18px;
+
+line-height:1.5;
+
+color: rgb(255, 55, 89);
+
+}
+
+#closeImageViewer{
+
+position:absolute;
+
+top:12px;
+
+right:12px;
+
+width:40px;
+
+height:40px;
+
+font-size:22px;
+
+cursor:pointer;
+
+}
+
+/* ===========================
+        GALLERY
+=========================== */
+
+.galleryTitle{
+
+    text-align:center;
+
+    margin-top:40px;
+
+}
+
+#galleryCounter{
+
+    color:#888;
+
+    font-size:22px;
+
+    margin-left:12px;
+
+}
+
+#galleryGrid{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fill,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.galleryCard{
+
+    background:#1b1b1b;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.galleryCard:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.galleryCard img{
+
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+
+}
+
+.galleryInfo{
+
+    padding:18px;
+
+}
+
+.galleryInfo h2{
+
+    margin-bottom:10px;
+
+}
+
+.galleryDate{
+
+    color:#999;
+
+    font-size:14px;
+
+}
+
+.galleryLocation{
+
+    color:#bbb;
+
+    margin:10px 0;
+
+}
+
+.galleryDescription{
+
+    color:#ddd;
+
+}

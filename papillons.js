@@ -155,7 +155,24 @@ updateButterflies();
                 unlockAchievement("butterfly");
 
             }
+        }
 
+        if(butterfflyCount>=50){
+                if(typeof unlockAchievement==="function"){
+                unlockAchievement("butterfly2");
+                }
+        }
+
+        if(butterfflyCount>=100){
+            if(typeof unlockAchievement==="function"){
+                unlockAchievement("butterfly3");
+            }
+        }
+
+        if(butterfflyCount>=1000){
+            if(typeof unlockAchievement==="function"){
+                unlockAchievement("butterfly4");
+            }
         }
 
 

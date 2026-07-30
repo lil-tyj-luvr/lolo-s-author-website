@@ -73,7 +73,61 @@ const catItems={
 
             price:75000
 
-        }
+        },
+
+        pokemon1:{
+            name: "Gastly",
+            image:"alice-cat3.png",
+            price:75000
+        },
+
+        pokemon2:{
+            name: "Mimikyu",
+            image:"alice-cat4.png",
+            price:75000
+        },
+
+        pokemon3:{
+            name: "Gardevoir",
+            image:"alice-cat5.png",
+            price:75000
+        },
+
+        pokemon4:{
+            name: "Bulbasaur",
+            image:"alice-cat7.png",
+            price:75000
+        },
+
+        pokemon5:{
+            name: "Lapras",
+            image:"alice-cat8.png",
+            price:75000
+        },
+
+        pokemon6:{
+            name: "Squirtle",
+            image:"alice-cat9.png",
+            price:75000
+        },
+
+        pokemon7:{
+            name: "Pikachu",
+            image:"alice-cat10.png",
+            price:75000
+        },
+
+        pokemon8:{
+            name: "Charizard",
+            image:"alice-cat11.png",
+            price:75000
+        },
+
+        pokemon9:{
+            name: "Jirachi",
+            image:"alice-cat6.png",
+            price:75000
+        },
 
     }
 

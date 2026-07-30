@@ -68,6 +68,10 @@ catData.hat ??= null;
 
 catData.ownedFood ??= {};
 
+catData.feedCount ??= 0;
+catData.petCount ??= 0;
+catData.catCoinsSpent ??= 0;
+
 
 // CONVERSION ANCIEN SYSTEME FOOD
 
@@ -582,6 +586,13 @@ cat.addEventListener("click",function(){
 );
 
     catData.pets++;
+catData.petCount++;
+
+if(catData.petCount>=100){
+
+    unlockAchievement("gentleHands");
+
+}
 
     saveCat();
 
@@ -721,6 +732,12 @@ function updateCatMood(){
         catData.mood="loving";
 
     }
+
+    if(catData.affection>=100){
+
+    unlockAchievement("bestfriends");
+
+}
 
     else if(catState==="sleeping"){
 
@@ -1258,6 +1275,20 @@ function feedCat(food){
 
 
     catData.ownedFood[food]--;
+
+    catData.feedCount++;
+
+if(catData.feedCount>=1){
+
+    unlockAchievement("firstMeal");
+
+}
+
+if(catData.feedCount>=50){
+
+    unlockAchievement("bottomless");
+
+}
 
 
 

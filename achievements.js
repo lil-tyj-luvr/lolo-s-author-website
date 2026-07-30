@@ -1,5 +1,5 @@
 // ==========================================================
-//            LENA WEBSITE - ACHIEVEMENTS SYSTEM
+//             ACHIEVEMENTS SYSTEM
 // ==========================================================
 
 
@@ -9,11 +9,15 @@
 
 const achievementNames = {
 
+    // lore
+
     finished_toabc:{
         icon:"📖",
         title:"Finished Tales of a Broken Crown!",
         description:"You're a real one :3"
     },
+
+    // butterflies
 
     butterfly:{
         icon:"🦋",
@@ -39,6 +43,8 @@ const achievementNames = {
         description:"Found 1000 hidden butterflies. Bro, leave some for the rest of us ?"
     },
 
+    // idk
+
     explorer:{
         icon:"🧭",
         title:"Explorer",
@@ -50,6 +56,8 @@ const achievementNames = {
         title:"Archivist",
         description:"Read every bonus 👅."
     },
+
+    // casino
 
     casino:{
         icon:"🎰",
@@ -68,6 +76,8 @@ const achievementNames = {
         title:"Lucky Bitch",
         description:"Won five bets in a row. Are you the developper or what ??"
     },
+
+    // offline game
 
     touchGrass:{
 
@@ -95,6 +105,8 @@ internetOverrated:{
 
 },
 
+// idk pt.2
+
     reader:{
         icon:"👑",
         title:"Loyal Reader",
@@ -107,11 +119,15 @@ internetOverrated:{
         description:"Discovered a hidden page."
     },
 
+    //coins
+
     coins1000000:{
         icon:"💰",
         title:"Rich!",
         description:"Own 1000000 coins."
     },
+
+    // shop
 
     truthShop:{
     icon:"🔍",
@@ -167,12 +183,50 @@ wallpaperMaster:{
     description:"Equipped every wallpaper at least once."
 },
 
+// cat
+
+bestfriend:{
+    Name:"💕 Best friends",
+    description:"Affection at 100/100 with the cat. Good job!!"
+},
+
+allHats:{
+    Name:"🎩 Fashion victim",
+    description:"Bought every hats for the cat. He has now more clothes than me lol"
+},
+
+specialSkin:{
+    Name:"✨ Welcome to the team, Litten!",
+    description:"Bought the special Litten skin for the cat. Will you collect them all??? Now I gotta add more Pokemons I guess!!"
+},
+
+firstMeal:{
+    name:"🍖 First Meal",
+    description:"Feed the cat for the first time."
+},
+
+bottomless:{
+    name:"🍽 Bottomless Pit",
+    description:"Feed the cat 50 times. Did you adopt him already ?"
+},
+
+gentleHands:{
+    name:"🖐 Gentle Hands",
+    description:"Pet the cat 100 times."
+},
+
+spoiledCat:{
+    name:"💸 Spoiled Cat",
+    description:"Spend 10,000 coins in the cat shop. Well I guess you like him😭"
+},
+
+// final achievement
+
 everything:{
     icon:"👀",
     title:"What's next ?",
     description:"Unlocked every achievement. Congrats!! You 100%ed this website!"
 },
-
 };
 
 
@@ -225,6 +279,8 @@ function unlockAchievement(id){
     }
 
     unlocked[id]=true;
+
+    addCoins(1000);
 
     saveAchievements();
 

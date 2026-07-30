@@ -45,13 +45,17 @@ displays.forEach(function(display){
 // Ajouter des pièces
 // -------------------------------
 
-function addCoins(amount){
+function addCoins(amount, showPopup = true){
 
     coins += amount;
 
     updateCoins();
 
+    if(showPopup){
+
     showCoinPopup("+" + amount + " 🪙");
+
+    }
 
     if(typeof addStatCoins==="function"){
 
@@ -136,7 +140,7 @@ if(!localStorage.getItem("visited_" + page)){
 
     localStorage.setItem("visited_" + page, true);
 
-    addCoins(100);
+    addCoins(100, false);
 
 }
 
@@ -148,12 +152,9 @@ if(!localStorage.getItem("visited_" + page)){
 // ======================================================
 
 // Toutes les secondes :
-
 setInterval(function(){
 
-    coins++;
-
-    updateCoins();
+    addCoins(100, false);
 
 },1000);
 
