@@ -77,6 +77,38 @@ const achievementNames = {
         description:"Won five bets in a row. Are you the developper or what ??"
     },
 
+    // blackjack
+
+    firstBlackjack:{
+        icon:"🃏",
+        title:"First Hand",
+        description:"Play your first blackjack game. Welcome to the addicted gang"
+    },
+
+    naturalBlackjack:{
+        icon:"⭐️",
+        title:"Blackjack!",
+        description:"Get a natural blackjack (your first two cards are an ace and a figure)"
+    },
+
+    blackjack10:{
+        icon:"🍀",
+        title:"Lucky streak",
+        description:"Win 10 blackjack games."
+    },
+
+    highRoller:{
+        icon:"🤑",
+        title:"High Roller",
+        description:"Bet 10,000 coins."
+    },
+
+    blackjackLoser:{
+        icon:"😭",
+        title:"House always win pt.2",
+        description:"Lose 20 blackjack games."
+    },
+
     // offline game
 
     touchGrass:{
