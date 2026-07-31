@@ -782,8 +782,16 @@ body.dark-mode{
 
 body.dark-mode p{
 
-    color:white !important;
+    color:rgb(0, 0, 0) !important;
 
+}
+
+body.dark-mode ul{
+    color: black;
+}
+
+body.dark-mode ol{
+    color:black;
 }
 
 
@@ -792,7 +800,7 @@ body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3{
 
-    color:#ffcccc !important;
+    color:#b02323 !important;
 
 }
 
@@ -872,7 +880,7 @@ body.dark-mode #achievementButton{
 
 body.dark-mode .journalEntry{
 
-    background:rgba(20,20,20,.8);
+    background:rgba(114, 114, 114, 0.8);
 
     border-left:8px solid #8b0000;
 
@@ -1272,7 +1280,7 @@ body.dark-mode .journalEntry h2{
 
     justify-content:flex-end;
 
-    margin-top:20px;
+    margin-top:100px;
 
     margin-bottom:-15px;
 
@@ -1281,11 +1289,11 @@ body.dark-mode .journalEntry h2{
 
 .casinoArrowRight a{
 
-    font-size:38px;
+    font-size:16px;
 
     text-decoration:none;
 
-    color:gold;
+    color:pink;
 
     transition:.25s;
 
@@ -1296,7 +1304,7 @@ body.dark-mode .journalEntry h2{
 
     transform:translateX(8px);
 
-    color:white;
+    color:rgb(255, 158, 174);
 
 }
 
@@ -2278,6 +2286,13 @@ z-index:999;
 
 }
 
+#blackjackGame.dark-mode{
+    background-color: black;
+    color: rgb(115, 32, 32);
+}
+
+
+
 
 
 #blackjackGame h1,
@@ -2380,7 +2395,7 @@ z-index:999;
 
     margin:10px;
 
-    font-size:18px;
+    font-size:25px;
 
     cursor:pointer;
 
@@ -2448,4 +2463,91 @@ z-index:999;
     transform:scale(1.2);
 
 
+}
+
+/* =====================================================
+                BLACKJACK - DARK MODE
+===================================================== */
+
+body.darkmode #blackjackGame{
+
+    background:rgba(0,0,0,0.88);
+
+    border:3px solid #8b0000;
+
+    box-shadow:0 0 30px rgba(139,0,0,.45);
+
+}
+
+
+body.darkmode #blackjackGame h1,
+body.darkmode #blackjackGame h2,
+body.darkmode #blackjackResult,
+body.darkmode #playerScore,
+body.darkmode #dealerScore{
+
+    color:#b30000;
+
+}
+
+
+body.darkmode #playerCards,
+body.darkmode #dealerCards{
+
+    background:rgba(255,255,255,.04);
+
+    color:white;
+
+    border:2px solid #8b0000;
+
+}
+
+
+body.darkmode #blackjackBet{
+
+    background:#111;
+
+    color:white;
+
+    border:2px solid #8b0000;
+
+}
+
+
+body.darkmode #blackjackGame button{
+
+    background:#8b0000;
+
+    color:white;
+
+    border:2px solid #5a0000;
+
+}
+
+
+body.darkmode #blackjackGame button:hover{
+
+    background:#b30000;
+
+    transform:scale(1.05);
+
+}
+
+
+body.darkmode #backButton{
+
+    color:white;
+
+}
+
+body.darkmode #dealerCards{
+    color:rgba(239, 17, 17, 0.561);
+}
+
+body.darkmode #playerCards{
+    color:rgba(239, 17, 17, 0.561);
+}
+
+body.darkmode #blackjackGame{
+    color:rgb(151, 36, 36);
 }

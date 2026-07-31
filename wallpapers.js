@@ -253,15 +253,15 @@ function applyWallpaper(){
 
         pinkStars:"pink wallpaper stars.jpg",
 
-        hyyh:"hyyh wallpaper.jpg",
+        hyyh:"wallpaper pink.jpg",
 
-        nana:"nana wallpaper.jpg",
+        nana:"strawberry.jpg",
 
-        floral:"simple floral wallpaper.jpg",
+        floral:"leopard pink.jpg",
 
-        sukuna:"sukuna wallpaper.jpg",
+        sukuna:"uzumaki.jpg",
 
-        chemistry:"iconic wallpaper.jpg"
+        chemistry:"lilies.jpg"
 
     };
 
@@ -271,15 +271,15 @@ function applyWallpaper(){
 
         darkStars:"dark wallpaper.jpg",
 
-        floral1:"simple floral wallpaper darkmode.jpg",
+        floral1:"black lips.jpg",
 
         guitar:"guitar wallpaper.jpg",
 
         leopard:"leopard wallpaper.jpg",
 
-        moon:"moon wallpaper.jpg",
+        moon:"black lilies.jpg",
 
-        bts:"bts wallpaper fake love.jpg"
+        bts:"dark hyyh.jpg"
 
     };
 

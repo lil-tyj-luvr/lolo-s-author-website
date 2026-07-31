@@ -10,6 +10,11 @@ const catItems={
         salmon:{
             name:"salmon",
             price:5000
+        },
+
+        chicken:{
+            name:"chicken",
+            price:7500
         }
 
     },

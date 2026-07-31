@@ -22,6 +22,10 @@ if(!catData){
 
 }
 
+
+
+
+
 // ==========================================================
 // INITIALISATION FOOD
 // ==========================================================
@@ -582,7 +586,7 @@ cat.addEventListener("click",function(){
 
     catData.affection = Math.min(
     100,
-    catData.affection+0,25
+    catData.affection+0.25
 );
 
     catData.pets++;
@@ -643,6 +647,14 @@ overlay.innerHTML=`
         <h2>Welcome! Interact with Alice's cat!!!</h2>
 
     </div>
+
+    <div id="catName">
+    lil Bro
+</div>
+
+<button id="renameCatButton">
+✏ Rename
+</button>
 
     <div id="catStats"></div>
 
@@ -769,6 +781,18 @@ setInterval(function(){
 },60000);
 function refreshCatMenu(){
 
+    catName =
+localStorage.getItem("catName") || "Lil Bro";
+
+    const nameDisplay =
+document.getElementById("catName");
+
+if(nameDisplay){
+
+    nameDisplay.textContent = catName;
+
+}
+
     const stats =
     document.getElementById("catStats");
 
@@ -884,6 +908,7 @@ function refreshCatMenu(){
 </div>
 
 `;
+
 
 console.log("REFRESH POPUP OK");
 console.log(catData);
@@ -1258,7 +1283,7 @@ function feedCat(food){
     if(catData.hunger>=100){
 
     showCatMessage(
-        "🐈 lil bro can't eat anymore."
+        "🐈" + catName + " can't eat anymore."
     );
 
     return;
@@ -1366,3 +1391,44 @@ function removeCatHat(){
     );
 
 }
+
+//==========================================================
+// NOM DU CHAT
+//==========================================================
+document
+.getElementById("renameCatButton")
+.onclick=function(){
+
+    const newName=
+    prompt(
+        "Choose a name for the cat:",
+        catName
+    );
+
+    if(!newName){
+
+        return;
+
+    }
+
+    catName=newName;
+
+    localStorage.setItem(
+        "catName",
+        catName
+    );
+
+    document
+    .getElementById("catName")
+    .textContent=
+    catName;
+
+    if(typeof lilithSay==="function"){
+
+        lilithSay(
+        "That's... certainly a name."
+        );
+
+    }
+
+};

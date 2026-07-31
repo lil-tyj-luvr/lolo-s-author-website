@@ -263,6 +263,29 @@ Number(
 document.getElementById("blackjackBet").value
 );
 
+// Vérifie la mise
+if(currentBet <= 0){
+
+    return;
+
+}
+
+// Impossible de miser plus que son solde
+if(currentBet > coins){
+
+    document.getElementById("blackjackResult").innerHTML =
+    "❌ You don't have enough coins.";
+
+    if(typeof lilithSay === "function"){
+
+        lilithSay("Current balance: " + coins + " coins.\nFinancial genius.");
+
+    }
+
+    return;
+
+}
+
 
 
 if(currentBet<=0){
