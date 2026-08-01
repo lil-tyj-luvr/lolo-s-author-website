@@ -644,13 +644,18 @@ overlay.innerHTML=`
 
     <div id="catContent">
 
-        <h2>Welcome! Interact with Alice's cat!!!</h2>
+        <h2>Welcome!</h2> <h3>Interact with Alice's cat!!!</h3>
+
+        <p>This is the menu for Alice's cat from <i>Butterflies in my Stomach</i>, you can see his stats (full left) with affection, hunger and mood.<br/> 
+        You can also buy him food, hats and skins (check out the shop!) and feed him/customise him as you want!!</p>
+        <p>You can also rename him, and the website will refer to him as his new name, otherwise, Lilith will call him 'lil bro'.</p>
+        
 
     </div>
-
+    
     <div id="catName">
-    lil Bro
-</div>
+    
+    </div>
 
 <button id="renameCatButton">
 ✏ Rename

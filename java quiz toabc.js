@@ -1,3 +1,5 @@
+console.log("QUIZ JS LOADED");
+
 const finish = document.getElementById("finish");
 
 finish.addEventListener("click", function(){
@@ -21,6 +23,8 @@ finish.addEventListener("click", function(){
 
 
     if(score >= Math.ceil(bonnesReponses.length*0.7)){
+
+        console.log("Passed!");
 
     unlockAchievement("finished_toabc");
 
