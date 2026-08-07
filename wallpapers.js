@@ -257,7 +257,7 @@ function applyWallpaper(){
 
         nana:"strawberry.jpg",
 
-        floral:"leopard pink.jpg",
+        floral:"pink-wallpaper-leopard.jpg",
 
         sukuna:"uzumaki.jpg",
 
@@ -271,15 +271,15 @@ function applyWallpaper(){
 
         darkStars:"dark wallpaper.jpg",
 
-        floral1:"black lips.jpg",
+        floral1:"dark wallpaper flowers.jpg",
 
         guitar:"guitar wallpaper.jpg",
 
         leopard:"leopard wallpaper.jpg",
 
-        moon:"black lilies.jpg",
+        moon:"dark wallpaper no im not a cat.jpg",
 
-        bts:"dark hyyh.jpg"
+        bts:"dark wallpaper iamthegreatest.jpg"
 
     };
 

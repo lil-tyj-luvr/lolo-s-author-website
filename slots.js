@@ -72,7 +72,7 @@ function spinReel(reel,duration,finalSymbol){
 function playSlots(){
 
 
-    if(coins < 10){
+    if(coins < 100){
 
         alert("You don't have enough coins!");
 
@@ -165,17 +165,17 @@ function playSlots(){
 
         if(win){
 
-            addCoins(100);
+            addCoins(1000);
 
             slotResult.innerHTML =
-            "🎉 JACKPOT!<br><br>+100 🪙";
+            "🎉 JACKPOT!<br><br>+1000 🪙";
 
         }
 
         else{
 
             slotResult.innerHTML =
-            "💀 You lost 10 🪙";
+            "💀 You lost 100 🪙";
 
         }
 

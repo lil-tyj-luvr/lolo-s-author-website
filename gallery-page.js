@@ -13,7 +13,7 @@ document.getElementById("galleryGrid");
 const counter=
 document.getElementById("galleryCounter");
 
-const totalImages = 36;
+const totalImages =43;
 
 counter.innerHTML=
 galleryData.length+

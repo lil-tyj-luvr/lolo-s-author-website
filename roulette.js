@@ -2,7 +2,6 @@
 //                LENA WEBSITE - ROULETTE
 // ==========================================================
 
-
 // ----------------------------------------------------
 // Boutons
 // ----------------------------------------------------
@@ -16,9 +15,6 @@ const betInput = document.getElementById("bet");
 
 const wheel = document.getElementById("wheel");
 
-
-
-
 // ----------------------------------------------------
 // Sauvegarde casino
 // ----------------------------------------------------
@@ -27,21 +23,17 @@ let losses = Number(localStorage.getItem("casinoLosses"));
 
 if(isNaN(losses)){
 
-    losses = 0;
+losses = 0;
 
 }
-
 
 let winStreak = Number(localStorage.getItem("winStreak"));
 
 if(isNaN(winStreak)){
 
-    winStreak = 0;
+winStreak = 0;
 
 }
-
-
-
 
 // ----------------------------------------------------
 // Cases rouges
@@ -59,57 +51,45 @@ const redNumbers = [
 
 ];
 
-
-
-
 // ----------------------------------------------------
 // Récupérer les cases de la roue
 // ----------------------------------------------------
 
 const slots = document.querySelectorAll(".slot");
 
-
-
-
 // ----------------------------------------------------
 // Placement des ronds
 // ----------------------------------------------------
 
-const radius = 105;
 
+const radius = 180;
+const center = 210;
 
 slots.forEach(function(slot,index){
 
-
-    const angle =
+const angle =
 (360 / slots.length) * index - 90;
 
-
-    const rad =
-    angle * Math.PI / 180;
-
-
-    const x =
-    Math.cos(rad) * radius;
+const rad =
+angle * Math.PI / 180;
 
 
-    const y =
-    Math.sin(rad) * radius;
+const x =
+Math.cos(rad) * radius;
 
 
+const y =
+Math.sin(rad) * radius;
 
-    slot.style.left =
-    (130 + x - 15) + "px";
+
+slot.style.left =
+(center + x - 15) + "px";
 
 
-    slot.style.top =
-    (130 + y - 15) + "px";
-
+slot.style.top =
+(center + y - 15) + "px";
 
 });
-
-
-
 
 // ----------------------------------------------------
 // Jouer
@@ -117,51 +97,49 @@ slots.forEach(function(slot,index){
 
 function play(choice){
 
-
-    let bet = Number(betInput.value);
-
-
-
-    if(isNaN(bet) || bet <= 0){
-
-        return;
-
-    }
+let bet = Number(betInput.value);  
 
 
 
-    if(bet > coins){
+if(isNaN(bet) || bet <= 0){  
 
-        alert("You don't have enough coins!");
+    return;  
 
-        return;
-
-    }
+}  
 
 
 
+if(bet > coins){  
 
-    const allIn = (bet === coins);
+    alert("You don't have enough coins!");  
 
+    return;  
 
-
-    removeCoins(bet);
+}  
 
 
 
 
-
-    // ------------------------------------------------
-    // Tirage du résultat AVANT animation
-    // ------------------------------------------------
+const allIn = (bet === coins);  
 
 
-    // Choisir une vraie case de la roue
+
+removeCoins(bet);  
+
+
+
+
+
+// ------------------------------------------------  
+// Tirage du résultat AVANT animation  
+// ------------------------------------------------  
+
+
+// Choisir une vraie case de la roue
 
 // Choisir une case aléatoire
 
 let targetIndex = Math.floor(Math.random()*slots.length);
-
 
 // Couleur de la case choisie
 
@@ -169,33 +147,29 @@ let color;
 
 if(slots[targetIndex].classList.contains("red")){
 
-    color="red";
+color="red";
 
 }
 
 else if(slots[targetIndex].classList.contains("black")){
 
-    color="black";
+color="black";
 
 }
 
 else{
 
-    color="green";
+color="green";
 
 }
-
 
 // faux numéro uniquement pour l'affichage
 
 let number = targetIndex;
 
-
-
-   // ------------------------------------------------
+// ------------------------------------------------
 // Faire tourner la roue
 // ------------------------------------------------
-
 
 // angle entre chaque case
 
@@ -205,276 +179,251 @@ let number = targetIndex;
 
 const anglePerSlot = 360 / slots.length;
 
-
 // rotation actuelle
 
 let currentRotation = Number(
-    wheel.dataset.rotation || 0
+wheel.dataset.rotation || 0
 );
-
 
 // IMPORTANT : on remet l'angle choisi face à la flèche
 
 let targetRotation =
 -(targetIndex * anglePerSlot);
 
-
 let finalRotation =
 currentRotation + 1800 + targetRotation;
 
-
 wheel.dataset.rotation = finalRotation;
-
 
 wheel.style.transition =
 "transform 3s cubic-bezier(.17,.9,.2,1)";
 
-
 wheel.style.transform =
 "rotate(" + finalRotation + "deg)";
 
-    // ------------------------------------------------
-    // Résultat après animation
-    // ------------------------------------------------
+// ------------------------------------------------  
+// Résultat après animation  
+// ------------------------------------------------  
 
 
-    setTimeout(function(){
+setTimeout(function(){  
 
 
 
-        if(color==="red"){
+    if(color==="red"){  
 
 
-            result.innerHTML =
-            "🔴 "+number+" RED";
+        result.innerHTML =  
+        "🔴 "+number+" RED";  
 
 
-        }
+    }  
 
-        else if(color==="black"){
+    else if(color==="black"){  
 
 
-            result.innerHTML =
-            "⚫ "+number+" BLACK";
+        result.innerHTML =  
+        "⚫ "+number+" BLACK";  
 
 
-        }
+    }  
 
-        else{
+    else{  
 
 
-            result.innerHTML =
-            "🟢 0 GREEN";
+        result.innerHTML =  
+        "🟢 0 GREEN";  
 
 
-        }
+    }  
 
 
 
 
 
-        // ------------------------------------------------
-        // Gains
-        // ------------------------------------------------
+    // ------------------------------------------------  
+    // Gains  
+    // ------------------------------------------------  
 
 
-        if(choice === color){
+    if(choice === color){  
 
 
 
-            if(color === "green"){
+        if(color === "green"){  
 
 
 
-                addCoins(bet*36);
+            addCoins(bet*36);  
 
 
 
-                result.innerHTML +=
+            result.innerHTML +=  
 
-                "<br><br>🎉 JACKPOT! You won "
-                +(bet*35)+
-                " coins!";
+            "<br><br>🎉 JACKPOT! You won "  
+            +(bet*35)+  
+            " coins!";  
 
 
 
-            }
+        }  
 
 
-            else{
+        else{  
 
 
 
-                addCoins(bet*2);
+            addCoins(bet*2);  
 
 
 
-                result.innerHTML +=
+            result.innerHTML +=  
 
-                "<br><br>🎉 You won "
-                +bet+
-                " coins!";
+            "<br><br>🎉 You won "  
+            +bet+  
+            " coins!";  
 
 
 
-            }
+        }  
 
 
 
 
-            winStreak++;
+        winStreak++;  
 
 
-            localStorage.setItem(
-                "winStreak",
-                winStreak
-            );
+        localStorage.setItem(  
+            "winStreak",  
+            winStreak  
+        );  
 
 
 
-        }
+    }  
 
 
 
 
-        else{
+    else{  
 
 
 
-            losses += bet;
+        losses += bet;  
 
 
 
-            localStorage.setItem(
-                "casinoLosses",
-                losses
-            );
+        localStorage.setItem(  
+            "casinoLosses",  
+            losses  
+        );  
 
 
 
-            winStreak = 0;
+        winStreak = 0;  
 
 
 
-            localStorage.setItem(
-                "winStreak",
-                0
-            );
+        localStorage.setItem(  
+            "winStreak",  
+            0  
+        );  
 
 
 
-            result.innerHTML +=
+        result.innerHTML +=  
 
-            "<br><br>💀 You lost "
-            +bet+
-            " coins.";
+        "<br><br>💀 You lost "  
+        +bet+  
+        " coins.";  
 
 
 
-        }
+    }  
 
 
 
 
 
 
-        // ------------------------------------------------
-        // Achievements
-        // ------------------------------------------------
+    // ------------------------------------------------  
+    // Achievements  
+    // ------------------------------------------------  
 
 
-        if(losses >= 1000000){
+    if(losses >= 1000000){  
 
-            unlockAchievement("casino");
+        unlockAchievement("casino");  
 
-        }
+    }  
 
 
 
-        if(winStreak >= 5){
+    if(winStreak >= 5){  
 
-            unlockAchievement("lucky");
+        unlockAchievement("lucky");  
 
-        }
+    }  
 
 
 
-        if(allIn){
+    if(allIn){  
 
-            unlockAchievement("allin");
+        unlockAchievement("allin");  
 
-        }
+    }  
 
 
 
 
-    },3000);
-
-
+},3000);
 
 }
-
-
-
-
-
-
 
 // ----------------------------------------------------
 // Boutons
 // ----------------------------------------------------
 
-
 if(redButton){
 
-
-    redButton.onclick=function(){
-
-
-        play("red");
+redButton.onclick=function(){  
 
 
-    }
+    play("red");  
 
 
 }
 
-
+}
 
 if(blackButton){
 
-
-    blackButton.onclick=function(){
-
-
-        play("black");
+blackButton.onclick=function(){  
 
 
-    }
+    play("black");  
 
 
 }
 
-
+}
 
 if(greenButton){
 
-
-    greenButton.onclick=function(){
-
-
-        play("green");
+greenButton.onclick=function(){  
 
 
-    }
+    play("green");  
 
+
+}
 
 }
 
 function allIn(){
 
-    document.getElementById("bet").value = coins;
+document.getElementById("bet").value = coins;  
 
-    localStorage.setItem("lastAllIn", "true");
+localStorage.setItem("lastAllIn", "true");
 
 }

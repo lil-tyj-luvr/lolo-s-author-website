@@ -1,188 +1,200 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
 
 <meta charset="UTF-8">
-
 <title>Lisa's Casino</title>
-<div class="casinoArrowRight">
-
-    <a href="slots.html">
-        🎰 SlotMachine
-    </a>
-
-</div>
-
-<a href="blackjack.html" id="blackjackButton">
-
-🃏 Blackjack
-
-</a>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
-<script src="lilith-dialogues.js"></script>
-<script src="lilith.js"></script>
-<script src="lilith-events.js"></script>
-<script src="cat-items.js"></script>
-<script src="cat-shop.js"></script>
-<script src="cat.js"></script>
-<script src="stats.js"></script>
-<script src="papillons.js"></script>
+
 <body>
-<h1>🎰 Lisa's Casino</h1>
 
-<div class="casino">
-
-    <h2>Current balance</h2>
-
-    <h1>🪙 <span id="coins">0</span></h1>
-
-    <br>
-
-    <div id="wheelContainer">
-    <script src="darkmode.js"></script>
-    <script src="wallpapers.js"></script>
 <div id="topbar">
 
-    <span id="coins">
-        🪙 0
-    </span>
+<span id="coins">🪙 0</span>
 
-</div>
-<div id="topbar">
+<span id="butterflies">🦋 0</span>
 
-    <span id="coins">
-        🪙 0
-    </span>
-    <span id="butterflies">
-    🦋 0
-</span>
-<a href="shop.html" id="shopButton">
-🛒
-</a>
+<a href="shop.html">🛒</a>
 
-<a href="gallery.html">
-    📷
-</a>
+<a href="gallery.html">📷</a>
 
-<a href="journal.html">
-    📓
-</a>
+<a href="journal.html">📓</a>
 
-<a href="casino.html">
-    🎰
-</a>
+<a href="casino.html">🎰</a>
 
-<a href="about me.html">
-    me
-</a>
+<a href="about me.html">me</a>
 
 <a href="flappybird.html">
     🪽
 </a>
 
-<button onclick="location.href='offline.html'">
-
-📡 Turn off internet
-
-</button>
-<a href="stats.html">
-📊
+<a href="credit.html">
+    📄
 </a>
 
-
-    <div id="topButtons">
-
-        <button id="themeButton">
-            🌙
-        </button>
-
-        <a href="achievements.html" id="achievementButton">
-            🏆
-        </a>
-
-    </div>
-
-</div>
-
-    <div id="wheel">
-
-        <div class="slot red"></div>
-        <div class="slot black"></div>
-        <div class="slot red"></div>
-        <div class="slot black"></div>
-        <div class="slot red"></div>
-        <div class="slot black"></div>
-        <div class="slot red"></div>
-        <div class="slot green"></div>
-        <div class="slot black"></div>
-        <div class="slot red"></div>
-        <div class="slot black"></div>
-        <div class="slot red"></div>
-
-    </div>
-
-</div>
-
-    <br><br>
-
-    <label>
-
-        Bet :
-
-        <input type="number" id="bet" value="10" min="1">
-
-    </label>
-
-    <br><br>
-
-<button id="allInButton" onclick="allIn()">
-
-💰 ALL IN
-
+<button onclick="location.href='offline.html'">
+📡 Turn off internet
 </button>
 
-    <br><br>
+<a href="stats.html">📊</a>
 
-    <div class="rouletteButtons">
+<div id="topButtons">
 
-        <button id="red" class="roulette redButton">
+<button id="themeButton">
+🌙
+</button>
 
-            🔴 RED
-
-        </button>
-
-        <button id="black" class="roulette blackButton">
-
-            ⚫ BLACK
-
-        </button>
-
-        <button id="green" class="roulette greenButton">
-
-            🟢 GREEN
-
-        </button>
-
-    </div>
-
-    <br>
-
-    <h2 id="rouletteResult"></h2>
+<a href="achievements.html" id="achievementButton">
+🏆
+</a>
 
 </div>
+
+</div>
+
+
+
+<div id="casinoPage">
+
+<h1 id="casinoTitle">
+
+Lisa's Casino
+
+</h1>
+
+<p id="casinoSubtitle">
+
+Remember she's an addict...
 
 <br>
 
-<a href="index.html">⬅ Return Home</a>
-<script src="gallery.js"></script>
+so gamble responsibly.
+
+</p>
+
+
+
+<div id="casinoGrid">
+
+<a class="casinoGame" href="roulette.html">
+
+<div class="casinoIcon">🎲</div>
+
+<h2>Roulette</h2>
+
+<p>Classic European addictive roulette.</p>
+
+</a>
+
+
+
+<a class="casinoGame" href="slots.html">
+
+<div class="casinoIcon">🎰</div>
+
+<h2>Slots</h2>
+
+<p>Pull the lever and pray.</p>
+
+</a>
+
+
+
+<a class="casinoGame" href="blackjack.html">
+
+<div class="casinoIcon">🃏</div>
+
+<h2>Blackjack</h2>
+
+<p>Goal: beat the dealer. I'm sure he cheats.</p>
+
+</a>
+
+
+
+<a class="casinoGame" href="wheel.html">
+
+<div class="casinoIcon">🎡</div>
+
+<h2>Lucky Wheel</h2>
+
+<p>I hate that game.</p>
+
+</a>
+
+
+
+<a class="casinoGame" href="duckrace.html">
+
+<div class="casinoIcon">🦆</div>
+
+<h2>Duck Race</h2>
+
+<p>Why does mine always loses at the end??</p>
+
+</a>
+
+
+
+<a class="casinoGame" href="crash.html">
+
+<div class="casinoIcon">🚀</div>
+
+<h2>Crash</h2>
+
+<p>MY FAV EVERRRRRRRRR</p>
+
+</a>
+
+
+
+<a class="casinoGame" href="tablegame.html">
+
+<div class="casinoIcon">🎯</div>
+
+<h2>Chance</h2>
+
+<p>This is pissing me off</p>
+
+</a>
+
+
+
+<a class="casinoGame" href="plinko.html">
+
+<div class="casinoIcon">🔴</div>
+
+<h2>Plinko</h2>
+
+<p>LUV THAT! friendly tip: you should put little bets.</p>
+
+</a>
+
+</div>
+
+</div>
+
+<a href="index.html">
+⬅ Return Home
+</a>
+
 <script src="coins.js"></script>
-<script src="achievements.js"></script>
-<script src="roulette.js"></script>
+<script src="darkmode.js"></script>
+<script src="wallpapers.js"></script>
+<script src="stats.js"></script>
+
+<script src="lilith-dialogues.js"></script>
+<script src="lilith.js"></script>
+<script src="lilith-events.js"></script>
+
+<script src="cat-items.js"></script>
+<script src="cat-shop.js"></script>
+<script src="cat.js"></script>
+
 </body>
 
 </html>

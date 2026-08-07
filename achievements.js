@@ -438,12 +438,12 @@ window.unlockAchievement=unlockAchievement;
 
 
 // ==========================================================
-// EXPLORER
+// ACHIEVEMENT EXPLORER
 // ==========================================================
 
 const pages=[
 
-"website code.html",
+"index.html",
 
 "about me.html",
 
@@ -451,7 +451,23 @@ const pages=[
 
 "achievements.html",
 
-"casino.html"
+"casino.html",
+
+"shop.html",
+
+"gallery.html",
+
+"journal.html",
+
+"slots.html",
+
+"blackjack.html",
+
+"flappybird.html",
+
+"offline.html",
+
+"stats.html",
 
 ];
 
@@ -509,6 +525,24 @@ if(butterflies>=5){
 
 }
 
+if(butterflies>=50){
+
+    unlockAchievement("butterfly2");
+
+}
+
+if(butterflies>=100){
+
+    unlockAchievement("butterfly3");
+
+}
+
+if(butterflies>=1000){
+
+    unlockAchievement("butterfly4");
+
+}
+
 
 
 
@@ -538,10 +572,6 @@ if(bonus>=3){
 // ==========================================================
 // RESET
 // ==========================================================
-
-// Tape dans la console :
-
-// resetAchievements()
 
 function resetAchievements(){
 

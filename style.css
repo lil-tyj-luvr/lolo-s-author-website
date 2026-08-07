@@ -390,274 +390,217 @@ button:hover{
     }
 
 }
-/* ==================================================
-        CASINO
-================================================== */
 
+/* ==================================================
+CASINO
+================================================== */
 
 .casino{
 
-    width:700px;
+width:700px;  
 
-    margin:80px auto 40px auto;
+margin:80px auto 40px auto;  
 
-    padding:40px;
+padding:40px;  
 
-    border-radius:25px;
+border-radius:25px;  
 
-    background:#0d5a2d;
+background:#0d5a2d;  
 
-    border:10px solid #9c6d2e;
+border:10px solid #9c6d2e;  
 
-    text-align:center;
+text-align:center;  
 
-    color:white;
+color:white;  
 
-    box-shadow:0 0 25px rgba(0,0,0,.35);
+box-shadow:0 0 25px rgba(0,0,0,.35);
 
 }
 
-
-
-
-/* --------------------------- */
-/* ROULETTE CONTAINER */
-/* --------------------------- */
-
+/* --------------------------- /
+/ ROULETTE CONTAINER /
+/ --------------------------- */
 
 #wheelContainer{
 
-    position:relative;
-
-    width:330px;
-
-    height:330px;
-
-    margin:50px auto;
+position:relative;
+width:500px;
+height:500px;
+margin:50px auto;
 
 }
 
-/* --------------------------- */
-/* WHEEL */
-/* --------------------------- */
-
+/* --------------------------- /
+/ WHEEL /
+/ --------------------------- */
 
 #wheel{
 
-    position:relative;
+position:relative;  
 
-    width:260px;
+width:420px;  
 
-    height:260px;
+height:420px;  
 
-    margin:auto;
+margin:auto;  
 
-    border-radius:50%;
+border-radius:50%;  
 
-    background:#184c26;
+background:#184c26;  
 
-    border:12px solid #d4af37;
+border:12px solid #d4af37;  
 
-    transition:transform 3s cubic-bezier(.17,.9,.2,1);
+transition:transform 3s cubic-bezier(.17,.9,.2,1);
 
 }
 
-
-
-
-
-/* --------------------------- */
-/* SLOTS */
-/* --------------------------- */
-
+/* --------------------------- /
+/ SLOTS /
+/ --------------------------- */
 
 .slot{
 
-    position:absolute;
+position:absolute; 
 
-    width:30px;
+width:30px;  
 
-    height:30px;
+height:30px;  
 
-    border-radius:50%;
+border-radius:50%;  
 
-    border:2px solid white;
+border:2px solid white;
 
 }
-
-
-
-
 
 .slot.red{
 
-    background:#d62d2d;
+background:#d62d2d;
 
 }
-
-
 
 .slot.black{
 
-    background:#222;
+background:#222;
 
 }
-
-
 
 .slot.green{
 
-    background:#26b84d;
+background:#26b84d;
 
 }
 
-
-
-
-
-/* --------------------------- */
-/* ROULETTE BUTTONS */
-/* --------------------------- */
-
+/* --------------------------- /
+/ ROULETTE BUTTONS /
+/ --------------------------- */
 
 .rouletteButtons{
 
-    display:flex;
+display:flex;  
 
-    justify-content:center;
+justify-content:center;  
 
-    gap:20px;
+gap:20px;  
 
-    margin-top:30px;
+margin-top:30px;
 
 }
-
-
-
 
 .roulette{
 
-    width:170px;
+width:170px;  
 
-    height:70px;
+height:70px;  
 
-    border-radius:15px;
+border-radius:15px;  
 
-    border:none;
+border:none;  
 
-    font-size:22px;
+font-size:22px;  
 
-    color:white;
+color:white;  
 
-    cursor:pointer;
+cursor:pointer;  
 
-    transition:.25s;
+transition:.25s;
 
 }
-
-
 
 .redButton{
 
-    background:#cf3232;
+background:#cf3232;
 
 }
-
-
 
 .blackButton{
 
-    background:#222;
+background:#222;
 
 }
-
-
 
 .greenButton{
 
-    background:#2bbd52;
+background:#2bbd52;
 
 }
-
-
-
 
 .redButton:hover{
 
-    transform:scale(1.08);
+transform:scale(1.08);  
 
-    background:#ef4b4b;
+background:#ef4b4b;
 
 }
-
-
 
 .blackButton:hover{
 
-    transform:scale(1.08);
+transform:scale(1.08);  
 
-    background:#444;
+background:#444;
 
 }
-
-
 
 .greenButton:hover{
 
-    transform:scale(1.08);
+transform:scale(1.08);  
 
-    background:#41c45c;
+background:#41c45c;
 
 }
 
-
-
-
-
-/* --------------------------- */
-/* RESULT */
-/* --------------------------- */
-
+/* --------------------------- /
+/ RESULT /
+/ --------------------------- */
 
 #rouletteResult{
 
-    min-height:70px;
+min-height:70px;  
 
-    margin-top:30px;
+margin-top:30px;  
 
-    font-size:32px;
+font-size:32px;  
 
-    color:#ffd700;
+color:#ffd700;
 
 }
 
-
-
-
-
-
-/* --------------------------- */
-/* INPUT */
-/* --------------------------- */
-
+/* --------------------------- /
+/ INPUT /
+/ --------------------------- */
 
 input[type="number"]{
 
-    padding:10px;
+padding:10px;  
 
-    border-radius:10px;
+border-radius:10px;  
 
-    border:none;
+border:none;  
 
-    width:120px;
+width:120px;  
 
-    font-size:18px;
+font-size:18px;
 
 }
-
-
-
-
 
 
 /* ==================================================
@@ -774,7 +717,7 @@ body.dark-mode{
 
     background-color:#111 !important;
 
-    color:white !important;
+    color:rgb(255, 185, 185) !important;
 
 }
 
@@ -782,16 +725,16 @@ body.dark-mode{
 
 body.dark-mode p{
 
-    color:rgb(0, 0, 0) !important;
+    color:rgb(255, 185, 185) !important;
 
 }
 
 body.dark-mode ul{
-    color: black;
+    color: rgb(255, 185, 185);
 }
 
 body.dark-mode ol{
-    color:black;
+    color:rgb(255, 185, 185);
 }
 
 
@@ -2275,7 +2218,7 @@ z-index:999;
 
     padding:30px;
 
-    background: rgb(255, 154, 171);
+    background: rgb(0, 76, 21);
 
     border:3px solid white;
 
@@ -2332,7 +2275,7 @@ z-index:999;
 #dealerCards{
 
 
-    background:pink;
+    background:rgb(0, 106, 30);
 
     padding:20px;
 
@@ -2783,5 +2726,1523 @@ body.darkmode #blackjackGame{
     font-size:22px;
 
     cursor:pointer;
+
+}
+
+/* ===========================
+        VISUAL NOVEL
+=========================== */
+
+body{
+    margin:0;
+}
+
+#vn{
+
+    position:relative;
+
+    width:100vw;
+
+    height:100vh;
+
+    overflow:hidden;
+
+    background:black;
+
+}
+
+#vnBackground{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* ---------- PERSONNAGES ---------- */
+
+#vnCharacters{
+
+    position:absolute;
+
+    bottom:120px;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-evenly;
+
+    align-items:flex-end;
+
+}
+
+.vnSprite{
+
+    opacity:0;
+
+    transition:opacity .3s ease;
+
+    user-select:none;
+
+    pointer-events:none;
+
+}
+
+#leftSprite{
+
+    height:85vh;
+
+}
+
+#centerSprite{
+
+    height:85vh;
+
+}
+
+#rightSprite{
+
+    height:85vh;
+
+}
+
+.vnSprite{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:auto;
+
+    opacity:0;
+
+    transition:opacity .3s ease;
+
+}
+
+/* ---------- HUD ---------- */
+
+#vnHUD{
+
+    position:absolute;
+
+    top:20px;
+
+    left:20px;
+
+    right:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+#vnHour,
+#vnDeaths{
+
+    background:rgba(246, 153, 153, 0.78);
+
+    color:rgb(0, 0, 0);
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    font-size:22px;
+
+}
+
+#vnDeaths{
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+/* ---------- OBJECTIF ---------- */
+
+#vnObjective{
+
+    position:absolute;
+
+    top:85px;
+
+    left:20px;
+
+    color:rgb(0, 0, 0);
+
+    background:rgba(246, 153, 153, 0.78);
+
+    padding:15px;
+
+    border-radius:12px;
+
+    width:260px;
+
+}
+
+/* ---------- BOITE DE DIALOGUE ---------- */
+
+#vnTextbox{
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    min-height:210px;
+
+    background:rgba(246, 153, 153, 0.78);
+
+    color:rgb(0, 0, 0);
+
+    padding:25px;
+
+    box-sizing:border-box;
+
+}
+
+#vnSpeaker{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
+
+#speakerIcon{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+}
+
+#dialogueText{
+
+    margin-top:18px;
+
+    font-size:23px;
+
+    line-height:1.5;
+
+}
+
+/* ===== CHOIX ===== */
+
+#choiceBox{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:250px;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    width:600px;
+
+    z-index:100;
+
+}
+
+.choiceButton{
+
+    padding:18px;
+
+    font-size:22px;
+
+    background:rgba(25,25,25,.92);
+
+    color:white;
+
+    border:2px solid white;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.choiceButton:hover{
+
+    background:white;
+
+    color:black;
+
+    transform:scale(1.02);
+
+}
+
+/* =====================================================
+                    CASINO HUB
+===================================================== */
+
+#casinoPage{
+
+max-width:1200px;
+
+margin:auto;
+
+padding-top:100px;
+
+text-align:center;
+
+}
+
+#casinoTitle{
+
+font-size:70px;
+
+margin-bottom:10px;
+
+}
+
+#casinoSubtitle{
+
+font-size:22px;
+
+opacity:.8;
+
+margin-bottom:60px;
+
+}
+
+#casinoGrid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.casinoGame{
+
+background:rgba(20,20,20,.82);
+
+border:2px solid rgba(255,255,255,.08);
+
+border-radius:25px;
+
+padding:35px;
+
+text-decoration:none;
+
+color:white;
+
+transition:.25s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.casinoGame:hover{
+
+transform:translateY(-8px) scale(1.03);
+
+border-color:#d22;
+
+box-shadow:0 0 25px rgba(255,50,50,.35);
+
+}
+
+.casinoIcon{
+
+font-size:70px;
+
+margin-bottom:15px;
+
+}
+
+.casinoGame h2{
+
+margin:10px 0;
+
+font-size:30px;
+
+}
+
+.casinoGame p{
+
+opacity:.75;
+
+font-size:16px;
+
+line-height:1.5;
+
+}
+
+/* =====================================================
+                    LUCKY WHEEL
+===================================================== */
+
+#wheelPage{
+
+padding-top:100px;
+
+text-align:center;
+
+}
+
+
+
+#wheelPage h1{
+
+font-size:60px;
+
+margin-bottom:10px;
+
+}
+
+
+
+#wheelPage p{
+
+font-size:20px;
+
+opacity:.7;
+
+margin-bottom:40px;
+
+}
+
+
+
+#wheelContainer{
+
+position:relative;
+
+width:650px;
+
+height:650px;
+
+margin:auto;
+
+}
+
+
+
+#wheelCanvas{
+
+width:650px;
+
+height:650px;
+
+border-radius:50%;
+
+background:#151515;
+
+border:8px solid #ffd54f;
+
+box-shadow:
+
+0 0 40px rgba(255,220,120,.35),
+
+0 0 90px rgba(255,80,80,.15);
+
+}
+
+
+
+#wheelPointer{
+
+position:absolute;
+
+top:-18px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:50px;
+
+font-weight:bold;
+
+color:white;
+
+text-shadow:
+
+0 0 15px red;
+
+z-index:50;
+
+}
+
+
+
+#wheelControls{
+
+margin-top:45px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:20px;
+
+}
+
+
+
+#wheelBet{
+
+width:150px;
+
+font-size:24px;
+
+padding:10px;
+
+text-align:center;
+
+border-radius:12px;
+
+}
+
+
+
+#spinWheel{
+
+font-size:28px;
+
+padding:14px 45px;
+
+border:none;
+
+border-radius:15px;
+
+background:#b40000;
+
+color:white;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+
+
+#spinWheel:hover{
+
+transform:scale(1.06);
+
+background:#d80000;
+
+}
+
+
+
+#spinWheel:disabled{
+
+opacity:.4;
+
+cursor:not-allowed;
+
+}
+
+
+
+#wheelResult{
+
+margin-top:35px;
+
+font-size:32px;
+
+font-weight:bold;
+
+min-height:50px;
+
+}
+
+/* =====================================================
+                    DUCK RACE
+===================================================== */
+
+#duckPage{
+
+padding-top:100px;
+
+text-align:center;
+
+}
+
+
+
+#duckPage h1{
+
+font-size:60px;
+
+margin-bottom:10px;
+
+}
+
+
+
+#duckPage p{
+
+font-size:20px;
+
+opacity:.7;
+
+margin-bottom:30px;
+
+}
+
+
+
+#duckBetInput{
+
+font-size:24px;
+
+padding:10px;
+
+width:170px;
+
+text-align:center;
+
+border-radius:12px;
+
+margin-bottom:30px;
+
+}
+
+
+
+#duckSelection{
+
+display:grid;
+
+grid-template-columns:repeat(2,250px);
+
+justify-content:center;
+
+gap:15px;
+
+margin-bottom:30px;
+
+}
+
+
+
+.duckChoice{
+
+font-size:22px;
+
+padding:18px;
+
+border:none;
+
+border-radius:16px;
+
+cursor:pointer;
+
+background:#202020;
+
+color:white;
+
+transition:.25s;
+
+}
+
+
+
+.duckChoice:hover{
+
+transform:scale(1.05);
+
+background:#b40000;
+
+}
+
+
+
+.duckChoice.selected{
+
+outline:4px solid gold;
+
+background:#d11;
+
+}
+
+
+
+#startRace{
+
+font-size:28px;
+
+padding:14px 50px;
+
+border:none;
+
+border-radius:18px;
+
+cursor:pointer;
+
+background:#b40000;
+
+color:white;
+
+margin-bottom:45px;
+
+transition:.25s;
+
+}
+
+
+
+#startRace:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+#raceContainer{
+
+width:1000px;
+
+max-width:95%;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+
+
+.lane{
+
+position:relative;
+
+height:90px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.08);
+
+overflow:hidden;
+
+border:2px solid rgba(255,255,255,.08);
+
+}
+
+
+
+.finishLine{
+
+position:absolute;
+
+right:20px;
+
+top:0;
+
+width:14px;
+
+height:100%;
+
+background:
+
+repeating-linear-gradient(
+
+white 0 12px,
+
+black 12px 24px
+
+);
+
+}
+
+
+
+.duck{
+
+position:absolute;
+
+left:20px;
+
+top:50%;
+
+transform:translateY(-50%);
+
+font-size:55px;
+
+transition:transform .12s;
+
+}
+
+
+
+.yellow{
+
+filter:drop-shadow(0 0 10px gold);
+
+}
+
+
+
+.blue{
+
+filter:drop-shadow(0 0 10px deepskyblue);
+
+}
+
+
+
+.green{
+
+filter:drop-shadow(0 0 10px limegreen);
+
+}
+
+
+
+.red{
+
+filter:drop-shadow(0 0 10px crimson);
+
+}
+
+
+
+#raceResult{
+
+margin-top:35px;
+
+font-size:34px;
+
+font-weight:bold;
+
+min-height:45px;
+
+}
+
+/* =====================================================
+                        CRASH
+===================================================== */
+
+#crashPage{
+
+padding-top:100px;
+
+text-align:center;
+
+}
+
+
+
+#crashPage h1{
+
+font-size:65px;
+
+margin-bottom:10px;
+
+}
+
+
+
+#crashPage p{
+
+font-size:22px;
+
+opacity:.75;
+
+margin-bottom:35px;
+
+}
+
+
+
+#crashControls{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+margin-bottom:35px;
+
+}
+
+
+
+#crashBet{
+
+width:170px;
+
+font-size:24px;
+
+padding:10px;
+
+text-align:center;
+
+border-radius:12px;
+
+}
+
+
+
+#launchRocket,
+
+#cashOutButton{
+
+font-size:24px;
+
+padding:12px 28px;
+
+border:none;
+
+border-radius:15px;
+
+cursor:pointer;
+
+background:#b40000;
+
+color:white;
+
+transition:.25s;
+
+}
+
+
+
+#launchRocket:hover,
+
+#cashOutButton:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+#cashOutButton:disabled{
+
+opacity:.4;
+
+cursor:not-allowed;
+
+}
+
+
+
+#rocketScene{
+
+position:relative;
+
+width:900px;
+
+max-width:95%;
+
+height:500px;
+
+margin:auto;
+
+overflow:hidden;
+
+border-radius:25px;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+#091326,
+
+#0f2748,
+
+#1f3b6e,
+
+#4e79b8
+
+);
+
+box-shadow:
+
+0 0 35px rgba(0,0,0,.4);
+
+}
+
+
+
+#rocket{
+
+position:absolute;
+
+left:50%;
+
+bottom:40px;
+
+transform:translateX(-50%);
+
+font-size:90px;
+
+transition:transform .05s linear;
+
+}
+
+
+
+#multiplier{
+
+position:absolute;
+
+top:20px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:55px;
+
+font-weight:bold;
+
+color:white;
+
+text-shadow:
+
+0 0 20px gold;
+
+}
+
+
+
+#crashResult{
+
+margin-top:35px;
+
+font-size:34px;
+
+font-weight:bold;
+
+min-height:45px;
+
+}
+
+#altitude{
+
+position:absolute;
+
+top:90px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:26px;
+
+color:white;
+
+opacity:.8;
+
+}
+
+/* =====================================================
+                    RISK LINE
+===================================================== */
+
+#riskPage{
+
+padding-top:100px;
+
+text-align:center;
+
+}
+
+
+
+#riskPage h1{
+
+font-size:60px;
+
+}
+
+
+
+#riskPage p{
+
+font-size:22px;
+
+opacity:.75;
+
+margin-bottom:40px;
+
+}
+
+
+
+#riskBet{
+
+font-size:24px;
+
+padding:10px;
+
+width:170px;
+
+text-align:center;
+
+border-radius:12px;
+
+margin-bottom:40px;
+
+}
+
+
+
+#riskSliderContainer{
+
+width:900px;
+
+max-width:95%;
+
+margin:auto;
+
+}
+
+
+
+#riskScale{
+
+position:relative;
+
+height:26px;
+
+background:#333;
+
+border-radius:20px;
+
+overflow:hidden;
+
+}
+
+
+
+#riskZone{
+
+position:absolute;
+
+left:0;
+
+top:0;
+
+height:100%;
+
+width:50%;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+limegreen,
+
+#7fff7f
+
+);
+
+transition:.2s;
+
+}
+
+
+
+#riskBall{
+
+position:absolute;
+
+left:0;
+
+top:50%;
+
+transform:translate(-50%,-50%);
+
+width:30px;
+
+height:30px;
+
+border-radius:50%;
+
+background:white;
+
+box-shadow:0 0 12px white;
+
+}
+
+
+
+#riskSlider{
+
+width:100%;
+
+margin-top:30px;
+
+}
+
+
+
+#riskInfos{
+
+display:flex;
+
+justify-content:center;
+
+gap:80px;
+
+font-size:28px;
+
+margin:35px 0;
+
+}
+
+
+
+#riskPlay{
+
+font-size:28px;
+
+padding:14px 45px;
+
+background:#b40000;
+
+color:white;
+
+border:none;
+
+border-radius:15px;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+
+
+#riskPlay:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+#riskResult{
+
+margin-top:35px;
+
+font-size:34px;
+
+font-weight:bold;
+
+min-height:45px;
+
+}
+
+/* =====================================================
+                        PLINKO
+===================================================== */
+
+
+#plinkoPage{
+
+    padding-top:100px;
+
+    text-align:center;
+
+}
+
+
+
+#plinkoPage h1{
+
+    font-size:60px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+#plinkoPage p{
+
+    font-size:22px;
+
+    opacity:.7;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+#plinkoControls{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+#plinkoBet{
+
+    width:150px;
+
+    padding:12px;
+
+    font-size:22px;
+
+    text-align:center;
+
+    border-radius:12px;
+
+}
+
+
+
+
+
+#dropBall{
+
+
+    padding:12px 40px;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    border:none;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+
+    background:#b40000;
+
+    color:white;
+
+
+    transition:.2s;
+
+}
+
+
+
+#dropBall:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+/* ==========================
+        PLATEAU
+========================== */
+
+
+#plinkoGame{
+
+    width:900px;
+
+    max-width:95%;
+
+    margin:auto;
+
+}
+
+
+
+
+#plinkoCanvas{
+
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+
+    background:
+
+    linear-gradient(
+
+        180deg,
+
+        #182238,
+
+        #345793
+
+    );
+
+
+    border-radius:20px 20px 0 0;
+
+
+    box-shadow:
+
+    0 0 30px rgba(0,0,0,.5);
+
+
+}
+
+
+
+
+
+/* ==========================
+        MULTIPLICATEURS
+========================== */
+
+
+#plinkoSlots{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(17,1fr);
+
+
+    width:100%;
+
+
+
+}
+
+
+
+#plinkoSlots div{
+
+
+    padding:15px 2px;
+
+
+    font-size:16px;
+
+
+    font-weight:bold;
+
+
+    color:white;
+
+
+    background:#222;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+}
+
+
+
+#plinkoSlots div:nth-child(1),
+#plinkoSlots div:nth-child(17){
+
+    background:#ff3030;
+
+}
+
+
+
+#plinkoSlots div:nth-child(2),
+#plinkoSlots div:nth-child(16){
+
+    background:#d69d00;
+
+    color:black;
+
+}
+
+
+
+#plinkoSlots div:nth-child(8),
+#plinkoSlots div:nth-child(9),
+#plinkoSlots div:nth-child(10){
+
+    background:#111;
+
+}
+
+
+
+#plinkoSlots div:nth-child(6),
+#plinkoSlots div:nth-child(12){
+
+    background:#305d30;
+
+}
+
+
+
+
+
+#plinkoResult{
+
+
+    margin-top:30px;
+
+
+    font-size:32px;
+
+
+    font-weight:bold;
+
+
+    min-height:40px;
+
 
 }
